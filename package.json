@@ -12,6 +12,7 @@
     "firebase": "^8.9.1",
     "materialize-css": "^1.0.0-rc.2",
     "register-service-worker": "^1.7.1",
+    "v": "^0.3.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuelidate": "^0.7.6",
