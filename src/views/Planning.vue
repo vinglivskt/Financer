@@ -32,7 +32,7 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import currencyFilter from '@/filters/currency.filter'
+import currencyFilter from '@/filters/currencyFilter'
 import localizeFilter from '@/filters/localize.filter'
 export default {
   name: 'planning',
@@ -55,7 +55,7 @@ export default {
     this.categories = categoires.map(cat => {
       const spend = records
 
-        .filter(r => r.categoriId === cat.id)
+        .filter(r => r.categoryId === cat.id)
         .filter(r => r.type === 'outcome')
         .reduce((total, record) => {
           return (total += +record.amount)

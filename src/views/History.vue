@@ -64,8 +64,7 @@ export default {
         this.records.map(record => {
           return {
             ...record,
-            categoryName: categoires.find(c => c.id === record.categoriId)
-              .title,
+            categoryName: categoires.find(c => c.id === record.categoryId).title,
             typeClass: record.type === 'income' ? 'green' : 'red',
             typeText:
               record.type === 'income'
@@ -82,7 +81,7 @@ export default {
             label: localizeFilter('CostsForCategories'),
             data: categoires.map(c => {
               return this.records.reduce((total, r) => {
-                if (r.categoriId === c.id && r.type === 'outcome') {
+                if (r.categoryId === c.id && r.type === 'outcome') {
                   total += +r.amount
                 }
                 return total
