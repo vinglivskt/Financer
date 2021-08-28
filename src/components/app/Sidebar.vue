@@ -1,6 +1,5 @@
 <template>
   <ul class="sidenav app-sidenav" :class="{open: value}">
-
     <router-link
       v-for="link in links"
       :key="link.url"
@@ -15,7 +14,7 @@
 </template>
 
 <script>
-import localizeFilter from "../../filters/localize.filter";
+import localizeFilter from '@/filters/localize.filter'
 export default {
   props: ['value'],
   data: () => ({

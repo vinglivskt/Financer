@@ -70,10 +70,10 @@
 </template>
 
 <script>
-import M from 'materialize-css'
 import { required, minValue } from 'vuelidate/lib/validators'
 import { mapGetters } from 'vuex'
-import localizeFilter from '../filters/localize.filter'
+import localizeFilter from '@/filters/localize.filter'
+import M from 'materialize-css'
 export default {
   name: 'record',
   metaInfo() {

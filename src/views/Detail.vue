@@ -50,7 +50,7 @@ export default {
     const record = await this.$store.dispatch('fetchRecordById', id)
     const category = await this.$store.dispatch(
       'fetchCategoryById',
-      record.categoriId
+      record.categoryId
     )
 
     this.record = {

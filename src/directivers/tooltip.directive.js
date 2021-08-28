@@ -1,5 +1,5 @@
 import M from 'materialize-css'
-import localizeFilter from '@/filters/localize.filter'
+import localizeFilter from '../filters/localize.filter'
 
 export default {
   bind(el, { value, modifiers }) {

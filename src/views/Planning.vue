@@ -32,8 +32,8 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import currencyFilter from "../filters/currencyFilter";
-import localizeFilter from '../filters/localize.filter'
+import currencyFilter from '@/filters/currency.filter'
+import localizeFilter from '@/filters/localize.filter'
 export default {
   name: 'planning',
   metaInfo() {
@@ -48,12 +48,13 @@ export default {
   computed: {
     ...mapGetters(['info'])
   },
-  async mounted() {
+  mounted: async function () {
     const records = await this.$store.dispatch('fetchRecords')
     const categoires = await this.$store.dispatch('fetchCategories')
 
     this.categories = categoires.map(cat => {
       const spend = records
+
         .filter(r => r.categoriId === cat.id)
         .filter(r => r.type === 'outcome')
         .reduce((total, record) => {

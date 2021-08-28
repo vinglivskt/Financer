@@ -33,9 +33,9 @@
 
 <script>
 import paginationMixin from '../mixins/pagination.mixin'
-import HistoryTable from '../components/HistoryTable'
-import {Pie} from 'vue-chartjs'
-import localizeFilter from '../filters/localize.filter'
+import HistoryTable from '@/components/HistoryTable'
+import { Pie } from 'vue-chartjs'
+import localizeFilter from '@/filters/localize.filter'
 
 export default {
   name: 'history',
