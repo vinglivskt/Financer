@@ -17,6 +17,7 @@
     "v": "^0.3.0",
     "vue": "^2.6.11",
     "vue-chartjs": "^3.5.1",
+    "vue-meta": "^2.4.0",
     "vue-router": "^3.2.0",
     "vuejs-paginate": "^2.1.0",
     "vuelidate": "^0.7.6",

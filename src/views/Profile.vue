@@ -40,7 +40,6 @@
 import M from 'materialize-css'
 import { mapGetters, mapActions } from 'vuex'
 import { required } from 'vuelidate/lib/validators'
-
 export default {
   metaInfo() {
     return {
