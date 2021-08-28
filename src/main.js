@@ -10,16 +10,18 @@ import Loader from "./components/app/Loader";
 import dateFilter from "./filters/date.filter";
 import tooltipDirective from './directivers/tooltip.directive'
 import 'materialize-css/dist/js/materialize.min'
-
+import localizeFilter from "./filters/localize.filter";
+import currencyFilter from "./filters/currencyFilter";
 import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/database'
-import currencyFilter from "./filters/currencyFilter";
+
 
 Vue.config.productionTip = false
 Vue.use(Vuelidate)
 Vue.use(messagePlugin)
 Vue.filter('date',dateFilter)
+Vue.filter('localize', localizeFilter)
 Vue.filter('currency',currencyFilter)
 Vue.directive('tooltip',tooltipDirective)
 Vue.component('Loader',Loader)
